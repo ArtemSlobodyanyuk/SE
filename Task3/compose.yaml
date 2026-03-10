@@ -32,4 +32,4 @@ services:
       start_period: 10s
 
 volumes:
-  pgdata::
+  pgdata:
