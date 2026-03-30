@@ -1,0 +1,44 @@
+body {
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.container {
+  width: 500px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  padding: 10px;
+  background: #22c55e;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+li {
+  background: #1e293b;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
