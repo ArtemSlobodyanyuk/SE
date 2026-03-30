@@ -1,24 +1,32 @@
 body {
-  font-family: Arial;
-  background: #0f172a;
-  color: white;
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #111;
+  color: #fff;
 }
 
-.container {
-  width: 500px;
-}
-
-h1 {
+header {
+  background: #00a650;
+  padding: 20px;
   text-align: center;
 }
 
-.form {
+h1 {
+  margin: 0;
+}
+
+.app {
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.card {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
 }
 
 input {
@@ -26,19 +34,43 @@ input {
   padding: 10px;
   border-radius: 8px;
   border: none;
+  outline: none;
 }
 
 button {
-  padding: 10px;
-  background: #22c55e;
+  background: #00a650;
   border: none;
+  padding: 10px 15px;
   border-radius: 8px;
+  color: white;
   cursor: pointer;
+  transition: 0.2s;
 }
 
-li {
-  background: #1e293b;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 8px;
+button:hover {
+  background: #008f45;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task {
+  background: #1c1c1c;
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task.done {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.task button {
+  background: red;
 }
